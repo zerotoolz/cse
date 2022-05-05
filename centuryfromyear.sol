@@ -17,7 +17,7 @@ contract Kata {
       century++;
     }
   }
-  return century;// your code here
+  return century;
   }
 }
 */
