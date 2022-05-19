@@ -4,3 +4,16 @@ contract Kata {
   return (n * (n + 1))/2; // solution with Gauss Summation
   }
 }
+
+/* or with looping 
+pragma solidity ^0.4.19;
+contract Kata {
+  function summation(int n) public pure returns (int) {
+    int count = 0;
+    for (int i = 1; i<=n; i++){
+      count += i; 
+    }
+    return count;
+  }  
+}
+*/
