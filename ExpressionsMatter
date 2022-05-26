@@ -1,0 +1,10 @@
+pragma solidity ^0.4.19;
+contract Kata {
+  function expressionMatter(int a, int b, int c) public pure returns (int) {
+    int r = a + b + c;
+    if ((a + b) * c > r) r = (a + b) * c;
+    if (a * (b + c) > r) r = a * (b + c);
+    if (a * b * c > r) r = a * b * c;
+    return r;
+  }
+}
